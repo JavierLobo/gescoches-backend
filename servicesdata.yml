@@ -1,0 +1,7 @@
+server:
+  port1: 5000
+  datasource:
+    driver-class-name: mongodb.jdbc.MongoDriver
+    url1: jdbc:mongo://192.168.1.68:27017/gescoches
+    username1: user
+    password1: 12345
