@@ -1,5 +1,7 @@
 server:
   port1: 5000
+  
+spring:
   datasource:
     driver-class-name: mongodb.jdbc.MongoDriver
     url1: jdbc:mongo://192.168.1.68:27017/gescoches
