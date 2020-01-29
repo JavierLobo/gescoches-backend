@@ -1,4 +1,4 @@
-package com.javierlobo.gescoches;
+package com.javierlobo.gescoches.eurekaserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
