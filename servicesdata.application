@@ -1,5 +1,7 @@
 server.port1=5000
-spring.datasource.driver-class-name1=mongodb.jdbc.MongoDriver
-spring.datasource.url1=jdbc:mongo://192.168.1.68:27017/gescoches
-spring.datasource.username1=user
-spring.datasource.password1=12345
+spring.data.mongodb.authentification-database1=admin
+spring.data.mongodb.username1=user
+spring.data.mongodb.password1=user
+spring.data.mongodb.database1=gescoches
+spring.data.mongodb.port1=27017
+spring.data.mongodb.host1=192.168.1.68
