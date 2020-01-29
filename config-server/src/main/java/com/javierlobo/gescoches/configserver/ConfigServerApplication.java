@@ -1,4 +1,4 @@
-package com.javierlobo.gesCoches.config_server;
+package com.javierlobo.gescoches.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

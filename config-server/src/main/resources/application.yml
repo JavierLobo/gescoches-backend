@@ -8,4 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: http://github.com/javerlobo/gescoches  profiles:    active: dev
+          uri: https://github.com/JavierLobo/gescoches
+          profiles:  active: dev
