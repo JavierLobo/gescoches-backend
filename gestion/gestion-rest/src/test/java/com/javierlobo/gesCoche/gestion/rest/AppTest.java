@@ -1,4 +1,4 @@
-//package com.javierlobo.gesCoche.gestion.rest;
+//package com.javierlobo.gescoche.gestion.rest;
 //
 //import junit.framework.Test;
 //import junit.framework.TestCase;
