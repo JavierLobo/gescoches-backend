@@ -6,4 +6,6 @@ public interface ICrudCocheBO {
 
 	VistaCoche guardarCoche(VistaCoche vistaCoche);
 
+	VistaCoche obtenerCoche(String idCoche);
+
 }

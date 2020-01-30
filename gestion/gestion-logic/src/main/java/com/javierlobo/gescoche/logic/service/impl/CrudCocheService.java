@@ -15,15 +15,8 @@ public class CrudCocheService implements ICrudCocheService {
 	private ICrudCocheBO crudCocheBO;
 	
 	@Override
-	public VistaResultado obtenerCoche(Long idCoche) {
-		// TODO Auto-generated method stub
-		return new VistaResultado(new VistaCoche(), "Ok");
-	}
-
-	@Override
-	public VistaResultado obtenerCoche(VistaCoche vistaCoche) {
-		// TODO Auto-generated method stub
-		return null;
+	public VistaResultado obtenerCoche(String id) {
+		return new VistaResultado(crudCocheBO.obtenerCoche(id), "Ok");
 	}
 
 	@Override

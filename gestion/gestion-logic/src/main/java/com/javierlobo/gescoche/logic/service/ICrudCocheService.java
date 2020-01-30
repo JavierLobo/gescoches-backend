@@ -5,13 +5,9 @@ import com.javierlobo.gescoche.persistence.VistaResultado;
 
 public interface ICrudCocheService {
 
-	VistaResultado obtenerCoche(Long idCoche);
+	VistaResultado obtenerCoche(String idCoche);
 
-	VistaResultado obtenerCoche(VistaCoche vistaCoche);
-
-	VistaResultado eliminarCoche(Long idCoche);
-
-	VistaResultado eliminarCoche(VistaCoche vistaCoche);
+	VistaResultado eliminarCoche(String Object_Id);
 
 	VistaResultado guardarCoche(VistaCoche vistaCoche);
 

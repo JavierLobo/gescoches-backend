@@ -24,17 +24,10 @@ public class CrudCochesResource {
 	private ICrudCocheService crudCocheService;
 
 	@ResponseStatus(value=HttpStatus.OK)
-	@GetMapping("/obtener/{idCoche}")
-	public @ResponseBody VistaResultado getObtenerCoche(
-			@PathVariable("idCoche") Long idCoche) {
-		return crudCocheService.obtenerCoche(idCoche);
-	}
-	
-	@ResponseStatus(value=HttpStatus.OK)
-	@GetMapping("/obtener")
-	public @ResponseBody VistaResultado getObtenerCoche(
-			@RequestBody VistaCoche vistaCoche) {
-		return crudCocheService.obtenerCoche(vistaCoche);
+	@GetMapping("/obtener/{Object_Id}")
+	public @ResponseBody VistaResultado getObtenerCochePorObject_Id(
+			@PathVariable("Object_Id") String Object_Id) {
+		return crudCocheService.obtenerCoche(Object_Id);
 	}
 	
 	@ResponseStatus(value=HttpStatus.OK)
