@@ -2,7 +2,6 @@ package com.javierlobo.gescoche.logic.service;
 
 import com.javierlobo.gescoche.persistence.VistaCoche;
 import com.javierlobo.gescoche.persistence.VistaResultado;
-import com.javierlobo.gescoche.persistence.core.utils.logic.exception.LogicException;
 
 public interface ICrudCocheService {
 
