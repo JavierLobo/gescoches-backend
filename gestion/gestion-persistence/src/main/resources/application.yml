@@ -1,6 +1,6 @@
 spring:
   application:
-    name: gestion
+    name: servicesdata
     
 info:
   component: Microservicios
@@ -9,9 +9,9 @@ server:
   port: 0
 
 eureka:
-  instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${ramdom.value}}}
+  instance:
+    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${ramdom.value}}}
   
 cloud:
   services:
     registrationMethod: route
-    
