@@ -31,17 +31,10 @@ public class CrudCochesResource {
 	}
 	
 	@ResponseStatus(value=HttpStatus.OK)
-	@DeleteMapping("/eliminar/{idCoche}")
-	public @ResponseBody VistaResultado deleteEliminarCoche(
-			@PathVariable("idCoche") Long idCoche) {
-		return crudCocheService.eliminarCoche(idCoche);		
-	}
-	
-	@ResponseStatus(value=HttpStatus.OK)
-	@DeleteMapping("/eliminar")
-	public @ResponseBody VistaResultado deleteEliminarCoche(
-			@RequestBody VistaCoche vistaCoche) {
-		return crudCocheService.eliminarCoche(vistaCoche);
+	@DeleteMapping("/eliminar/{Object_Id}")
+	public @ResponseBody VistaResultado deleteEliminarCochePorObject_Id(
+			@PathVariable("Object_Id") String Object_Id) {
+		return crudCocheService.eliminarCoche(Object_Id);		
 	}
 	
 	@ResponseStatus(value=HttpStatus.OK)

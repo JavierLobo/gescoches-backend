@@ -20,15 +20,8 @@ public class CrudCocheService implements ICrudCocheService {
 	}
 
 	@Override
-	public VistaResultado eliminarCoche(Long idCoche) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public VistaResultado eliminarCoche(VistaCoche vistaCoche) {
-		// TODO Auto-generated method stub
-		return null;
+	public VistaResultado eliminarCoche(String Object_Id) {
+		return new VistaResultado(crudCocheBO.eliminarCoche(Object_Id), "OK");
 	}
 
 	@Override

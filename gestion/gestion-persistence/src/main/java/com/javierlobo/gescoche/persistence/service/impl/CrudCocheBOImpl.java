@@ -19,13 +19,23 @@ public class CrudCocheBOImpl implements ICrudCocheBO {
 	private ICocheRepository cocheRepository; 
 
 	@Override
-	public VistaCoche obtenerCoche(String id) {
-		Optional<CocheDocument> cr = cocheRepository.findById(id);
+	public VistaCoche obtenerCoche(String object_Id) {
+		Optional<CocheDocument> cr = cocheRepository.findById(object_Id);
 		return CocheConverter.documentToVo(cr.get());
 	}
 	
 	@Override
 	public VistaCoche guardarCoche(VistaCoche vc) { 
 		return CocheConverter.documentToVo(cocheRepository.save(CocheConverter.voToDocument(vc)));
+	}
+
+	@Override
+	public VistaCoche eliminarCoche(String object_Id) {
+		Optional<CocheDocument> cr = cocheRepository.findById(object_Id);
+		if (!cr.isPresent()) {
+			throw new RuntimeException("No existe el objeto a con el id: " + object_Id);
+		}
+		cocheRepository.deleteById(object_Id);
+		return CocheConverter.documentToVo(cr.get());
 	}
 }

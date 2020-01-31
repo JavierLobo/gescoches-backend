@@ -8,4 +8,6 @@ public interface ICrudCocheBO {
 
 	VistaCoche obtenerCoche(String idCoche);
 
+	VistaCoche eliminarCoche(String object_Id);
+
 }
